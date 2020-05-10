@@ -33,17 +33,17 @@ This version also adds ESP32 and STM32 support to take advantage of the addition
 
 | Feature                 | ESP8266 | ESP32   | STM32F4
 |-------------------------|---------|---------|----------
-| SPI display             | :white_check_mark: yes | :white_check_mark: yes | :white_check_mark: yes
-| Parallel display        | :x: no | :white_check_mark: yes | :white_check_mark: yes
-| PWM Screen dimming      | :white_check_mark: yes | :white_check_mark: yes | :white_check_mark: yes
+| SPI display             | ✅ yes | ✅ yes | ✅ yes
+| Parallel display        | ❌ no  | ✅ yes | ✅ yes
+| PWM Screen dimming      | ✅ yes | ✅ yes | ✅ yes
 | Maximum Page Count      | 4       | 12 | 12
 | Object Types / Widgets  | 14      | 15 | 15
-| Dynamic Objects         | :white_check_mark: yes | :white_check_mark: yes | :white_check_mark: yes
+| Dynamic Objects         | ✅ yes | ✅ yes | ✅ yes
 | [Lvgl Theme Support][3] | basic only | all themes | tbd
-| [Custom .zi V5 font][4] | :white_check_mark: yes (latin1) | :white_check_mark: yes (latin1) | no
-| [FontAwesome Icons][5]  | :white_check_mark: 1300+ | :white_check_mark: 1300+ | no
-| PNG images              | :x: no | :grey_question: tbd | :grey_question: tbd 
-| Network                 | :white_check_mark: Wifi | :white_check_mark: Wifi | :white_check_mark: Ethernet
+| [Custom .zi V5 font][4] | ✅ yes (latin1) | ✅ yes (latin1) | no
+| [FontAwesome Icons][5]  | ✅ 1300+ | ✅ 1300+ | no
+| PNG images              | ❌ no | ❔ tbd | ❔ tbd 
+| Network                 | 📶 Wifi | 📶 Wifi | ✅ Ethernet
 
 ## Cloning
 
