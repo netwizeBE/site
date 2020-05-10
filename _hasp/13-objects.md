@@ -3,8 +3,12 @@ title: "Objects"
 permalink: /docs/objects/
 excerpt: "Suggestions and Front Matter defaults for working with pages."
 last_modified_at: 2016-11-03T11:13:12-04:00
-classes: wide
+toc: true
+toc_label: "My Table of Contents"
+toc_icon: "cog"
 ---
+
+{% include toc %}
 
 These are the common properties shared among all objects:
 
@@ -76,6 +80,8 @@ Besides the common properties listed above, each object type can have specific p
 #### Button
 **objid:10**
 
+![lv_btn]({{ site.url }}{{ site.baseurl }}/assets/images/hasp/lv_ex_btn_1.png){: .align-center}
+
 | Property | Value      | Required | Default | Description
 |----------|------------|----------|---------|--------------
 | toggle   | boolean    | no       | true    | When enabled, creates a toggle-on/toggle-off button. If false, creates a normal button
@@ -99,6 +105,8 @@ Possible wrapping modes are: expand, break, dots, scroll and loop
 ### Checkbox
 **objid:11**
 
+![lv_checkbox]({{ site.url }}{{ site.baseurl }}/assets/images/hasp/lv_ex_checkbox_1.png){: .align-center}
+
 | Property | Value      | Required | Default    | Description
 |----------|------------|----------|------------|--------------
 | val      | int16      | no       | 0          | The value: 1 for checked, 0 for unchecked
@@ -106,6 +114,8 @@ Possible wrapping modes are: expand, break, dots, scroll and loop
 
 ### Text Label
 **objid:12**
+
+![lv_label]({{ site.url }}{{ site.baseurl }}/assets/images/hasp/lv_ex_label_1.png){: .align-center}
 
 | Property | Value      | Required | Default    | Description
 |----------|------------|----------|------------|--------------
@@ -121,6 +131,8 @@ Possible wrapping modes are: expand, break, dots, scroll and loop
 ### Spinner
 **objid:21**
 
+![lv_spinner]({{ site.url }}{{ site.baseurl }}/assets/images/hasp/lv_ex_spinner_1.png){: .align-center}
+
 | Property  | Value      | Required | Default | Description
 |-----------|------------|----------|---------|--------------
 | speed     | int16      | no       | 1000    | The time for 1 furn in ms
@@ -129,6 +141,8 @@ Possible wrapping modes are: expand, break, dots, scroll and loop
 
 ### Colorpicker
 **objid:20**
+
+![lv_cpicker]({{ site.url }}{{ site.baseurl }}/assets/images/hasp/lv_ex_cpicker_1.png){: .align-center}
 
 | Property | Value      | Required | Default | Description
 |----------|------------|----------|---------|--------------
@@ -139,6 +153,8 @@ Possible wrapping modes are: expand, break, dots, scroll and loop
 
 ### Slider
 **objid:30**
+
+![lv_slider]({{ site.url }}{{ site.baseurl }}/assets/images/hasp/lv_ex_slider_1.png){: .align-center}
 
 | Property | Value      | Required | Default |
 |----------|------------|----------|---------|
@@ -159,6 +175,8 @@ Possible wrapping modes are: expand, break, dots, scroll and loop
 ### Gauge
 **objid:31**
 
+![lv_gauge]({{ site.url }}{{ site.baseurl }}/assets/images/hasp/lv_ex_gauge_1.png){: .align-center}
+
 | Property | Value      | Required | Default |
 |----------|------------|----------|---------|
 | min      | int16      | no       | 0       |
@@ -168,6 +186,8 @@ Possible wrapping modes are: expand, break, dots, scroll and loop
 
 ### Progressbar
 **objid:32**
+
+![lv_bar]({{ site.url }}{{ site.baseurl }}/assets/images/hasp/lv_ex_bar_1.png){: .align-center}
 
 | Property | Value      | Required | Default |
 |----------|------------|----------|---------|
@@ -179,6 +199,8 @@ Possible wrapping modes are: expand, break, dots, scroll and loop
 ### Switch
 **objid:40**
 
+![lv_switch]({{ site.url }}{{ site.baseurl }}/assets/images/hasp/lv_ex_switch_1.png){: .align-center}
+
 | Property   | Value      | Required | Default | Description
 |------------|------------|----------|---------|---------------
 | val      | int16        | no       | 0       | The value: 1 for on, 0 for off
@@ -186,12 +208,16 @@ Possible wrapping modes are: expand, break, dots, scroll and loop
 ### LED Indicator
 **objid:41**
 
+![lv_led]({{ site.url }}{{ site.baseurl }}/assets/images/hasp/lv_ex_led_1.png){: .align-center}
+
 | Property   | Value      | Required | Default | Description
 |------------|------------|----------|---------|---------------
 | val        | byte       | no       | 0       | The brightness of the indicator 0-255
 
 ### Dropdown List
 **objid:50**
+
+![lv_dropdown]({{ site.url }}{{ site.baseurl }}/assets/images/hasp/lv_ex_dropdown_1.png){: .align-center}
 
 | Property | Value      | Required | Default | Description
 |----------|------------|----------|---------|--------------------------
@@ -207,6 +233,8 @@ When the item is changed both `val` and `txt` of the newly selected item are sen
 
 ### Roller
 **objid:51**
+
+![lv_roller]({{ site.url }}{{ site.baseurl }}/assets/images/hasp/lv_ex_roller_1.png){: .align-center}
 
 | Property | Value      | Required | Default | Description
 |----------|------------|----------|---------|--------------------------
