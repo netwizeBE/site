@@ -2,16 +2,20 @@
 main:
   - title: "Projects"
     url: /projects/
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Blog"
+    url: /
+  - title: "Categories"
+    url: /categories/
+  - title: "Archive"
+    url: /year-archive/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Sitemap"
+    url: /sitemap/
 
 # documentation links
 hasp:
@@ -49,6 +53,8 @@ hasp:
         url: /docs/hass/
       - title: "OpenHAB"
         url: /docs/openhab/
+      - title: "Node-RED"
+        url: /docs/nodered/
   - title: Design Pages
     children:
       - title: "Page Layout"
