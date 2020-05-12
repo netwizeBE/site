@@ -3,8 +3,6 @@ title: "Objects"
 permalink: /docs/objects/
 excerpt: "Suggestions and Front Matter defaults for working with pages."
 toc: true
-toc_label: "My Table of Contents"
-toc_icon: "cog"
 ---
 
 {% include toc %}

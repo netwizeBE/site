@@ -55,6 +55,8 @@ hasp:
         url: /docs/openhab/
       - title: "Node-RED"
         url: /docs/nodered/
+      - title: "Tasmota Slave"
+        url: /docs/tasmota-slave/
   - title: Design Pages
     children:
       - title: "Page Layout"
