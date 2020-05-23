@@ -2,7 +2,6 @@
 title: "License"
 permalink: /docs/license/
 excerpt: "License for hasp-lvgl"
-last_modified_at: 2020-05-08T21:22:25+01:00
 classes: wide
 ---
 
@@ -28,49 +27,63 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+-------------------------------------------
+Based on the previous work of the following open source developers:
 
-Minimal Mistakes incorporates icons from [The Noun Project](https://thenounproject.com/) 
-creators Garrett Knoll, Arthur Shlain, and tracy tam.
-Icons are distributed under Creative Commons Attribution 3.0 United States (CC BY 3.0 US).
+- The original Arduino project HASwitchPlate,
+  Copyright© 2019 Allen Derusha allen@derusha.org.
+  HASwitchPlate is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-Minimal Mistakes incorporates [Font Awesome](http://fontawesome.io/),
-Copyright (c) 2017 Dave Gandy.
-Font Awesome is distributed under the terms of the [SIL OFL 1.1](http://scripts.sil.org/OFL) 
-and [MIT License](http://opensource.org/licenses/MIT).
+- LVGL graphics library,
+  Copyright© 2016 Gábor Kiss-Vámosi and
+  Copyright© 2019 LittlevGL.
+  LVGL is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-Minimal Mistakes incorporates photographs from [Unsplash](https://unsplash.com).
+- TFT_eSPI display library,
+  Copyright© 2020 Bodmer (https://github.com/Bodmer) All rights reserved.
+  TFT_eSPI is distributed under the terms of the FreeBSD License
+  and includes parts from the Adafruit_GFX library,
+  Copyright© 2012 Adafruit Industries. All rights reserved.
+  Adafruit_GFX is distributed under the terms of the BSD License
 
-Minimal Mistakes incorporates [Susy](http://susy.oddbird.net/),
-Copyright (c) 2017, Miriam Eric Suzanne.
-Susy is distributed under the terms of the [BSD 3-clause "New" or "Revised" License](https://opensource.org/licenses/BSD-3-Clause).
+- zi Font Engine
+  Copyright© 2020 Francis Van Roie
+  [MIT License](http://opensource.org/licenses/MIT).
 
-Minimal Mistakes incorporates [Breakpoint](http://breakpoint-sass.com/).
-Breakpoint is distributed under the terms of the [MIT/GPL Licenses](http://opensource.org/licenses/MIT).
+- ArduinoJson
+  Copyright© 2014-2020 Benoit BLANCHON
+  [MIT License](http://opensource.org/licenses/MIT).
 
-Minimal Mistakes incorporates [FitVids.js](https://github.com/davatron5000/FitVids.js/),
-Copyright (c) 2013 Dave Rubert and Chris Coyier.
-FitVids is distributed under the terms of the [WTFPL License](http://sam.zoy.org/wtfpl/).
+- PubSubClient
+  Copyright© 2008-2015 Nicholas O'Leary
+  [MIT License](http://opensource.org/licenses/MIT).
 
-Minimal Mistakes incorporates [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/),
-Copyright (c) 2014-2016 Dmitry Semenov, http://dimsemenov.com.
-Magnific Popup is distributed under the terms of the MIT License.
+- Logging engine is based on ArduinoLog,
+  Copyright© 2017,2018 Thijs Elenbaas, MrRobot62, rahuldeo2047, NOX73, dhylands, Josha blemasle, mfalkvidd
+  with mofications by Francis Van Roie.
+  ArduinoLog is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-Minimal Mistakes incorporates [jQuery Smooth Scroll](https://github.com/kswedberg/jquery-smooth-scroll),
-Copyright (c) 2017 Karl Swedberg.
-jQuery Smooth Scroll is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+- Syslog library,
+  Copyright© 2016 Martin Sloup
+  [MIT License](http://opensource.org/licenses/MIT).
 
-Minimal Mistakes incorporates [GreedyNav.js](https://github.com/lukejacksonn/GreedyNav),
-Copyright (c) 2015 Luke Jackson.
-GreedyNav.js is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+- QR Code generator
+  Copyright© Project Nayuki
+  [MIT License](http://opensource.org/licenses/MIT).
 
-Minimal Mistakes incorporates [Jekyll Group-By-Array](https://github.com/mushishi78/jekyll-group-by-array),
-Copyright (c) 2015 Max White <mushishi78@gmail.com>.
-Jekyll Group-By-Array is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+- AceButton
+  Copyright© 2018 Brian T. Park
+  [MIT License](http://opensource.org/licenses/MIT).
 
-Minimal Mistakes incorporates [@allejo's Pure Liquid Jekyll Table of Contents](https://allejo.io/blog/a-jekyll-toc-in-liquid-only/),
-Copyright (c) 2017 Vladimir Jimenez.
-Pure Liquid Jekyll Table of Contents is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+- Custom zi Fonts incorporate [Font Awesome](http://fontawesome.io/),
+  Copyright© 2017 Dave Gandy.
+  Font Awesome is distributed under the terms of the [SIL OFL 1.1](http://scripts.sil.org/OFL) 
+  and [MIT License](http://opensource.org/licenses/MIT).
 
-Minimal Mistakes incorporates [Lunr](http://lunrjs.com),
-Copyright (c) 2017 Oliver Nightingale.
-Lunr is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+- The bootscreen uses the [MaterialDesign Icons](https://materialdesignicons.com/) font,
+  Copyright© 2014, Austin Andrews (http://materialdesignicons.com/),
+  MaterialDesign Icons font is licensed under the SIL Open Font License, Version 1.1.
+
+- This website theme is based on [Minimal Mistakes](https://mmistakes.github.io),
+  Copyright© 2013-2020 Michael Rose and contributors
+  [MIT License](http://opensource.org/licenses/MIT).

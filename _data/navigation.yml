@@ -66,9 +66,9 @@ hasp:
   - title: Firmware Update
     children:
       - title: "ESP"
-        url: /docs/esp-update/
+        url: /docs/firmware-esp/
       - title: "STM32"
-        url: /docs/stm32-update/
+        url: /docs/firmware-stm32/
   - title: Customization
     children:
       - title: "Compiling"

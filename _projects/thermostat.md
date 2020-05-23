@@ -27,6 +27,7 @@ gallery:
     image_path: /assets/images/2020/20191028_003811.jpg
     alt: "placeholder image 3"
 classes: wide
+mathjax: true
 ---
 
 This build is an Open Thermostat for a 5-wire HVAC system. It requires 12-24V AC/DC input. It can operate
@@ -48,15 +49,63 @@ Schematic
 Bill of Materials
 -----------------
 
+### Power Circuit
+
 {:class="table table-bordered"}
-| Qty | Description                                                                                         | Supplier |
+| Qty | Description                                                            | Footprint                  | Supplier |
+|----:|------------------------------------------------------------------------|----------------------------|----------|
+| Power Supply                                                                                                      ||||
+|  1  | MB1S Bridge Rectifier 100V 0.5A                                        | SOIC-4                     | [AliExpress]()
+|  1  | Capactitor                                                             | 6.3 x 7.7mm                | [AliExpress]()
+|  1  | MC34063AD                                                              | SOIC-8 3.9x4.9mm P1.27mm   | [AliExpress]()
+|  1  | Capacitor                                                              | 6.3 x 5.4mm                | [AliExpress]()
+|  1  | Capacitor                                                              |                            | [AliExpress]()
+|  1  | Resistor                                                               |                            | [AliExpress]()
+|  1  | Resistor                                                               |                            | [AliExpress]()
+|  1  | Resistor                                                               |                            | [AliExpress]()
 |----:|-----------------------------------------------------------------------------------------------------|----------|
-|  1  | ESP-32 Wroom                                                                                        | [AliExpress]()
-|  1  | 14x02 Female Pinheader 2.54mm / 0.1" Pitch SMD                                                      | [AliExpress]()
-|  1  | 04x01 Female Pinheader 2.54mm / 0.1" Pitch SMD                                                      | [AliExpress]()
-|  1  | 2 Pin WAGO SMD Wire to Board connector                                                              | [AliExpress]()
-|  1  | 3 Pin WAGO SMD Wire to Board connector                                                              | [AliExpress]()
+| Microcontroller                                                                                                   ||||
+|----:|------------------------------------------------------------------------|----------------------------|----------|
+|  1  | ESP-32 Wroom                                                           |                            | [AliExpress]()
+|  1  | AMS 117-3.3V Voltage Regulator                                         | SOT-223                    | [AliExpress]()
+|  1  | 10µF Capacitor                                                         | 0805                       | [AliExpress]()
+|  1  | 22µF Capacitor                                                          | 0805                       | [AliExpress]()
+|  1  | 0.1µF Capacitor                                                       | 0805                       | [AliExpress]()
+|----:|-----------------------------------------------------------------------------------------------------|----------|
+| Display                                                                                                   ||||
+|----:|------------------------------------------------------------------------|----------------------------|----------|
+|  1  | 14x02 Female Pinheader 2.54mm / 0.1" Pitch SMD                         |                            | [AliExpress]()
+|  1  | 04x01 Female Pinheader 2.54mm / 0.1" Pitch SMD                         |                            | [AliExpress]()
+|  1  | 2 Pin WAGO SMD Wire to Board connector                                 |                            | [AliExpress]()
+|  1  | 3 Pin WAGO SMD Wire to Board connector                                 |                            | [AliExpress]()
+|----:|------------------------------------------------------------------------|----------------------------|----------|
+| Sensors|(optional)                                                                                                ||||
+|----:|------------------------------------------------------------------------|----------------------------|----------|
+|  1  | BME280 SMD                                                             |                            | [AliExpress]()
+|  3  | 10k Ohm Resistor                                                       | 0805                       | [AliExpress]()
+|  1  | 1µF Capacitor                                                          | 0805                       | [AliExpress]()
+|  1  | 0.1µF Capacitor                                                        | 0805                       | [AliExpress]()
+|  2  | JST SH I²C header                                                      | 4x1 JST SH                 | [AliExpress]()
+|----:|------------------------------------------------------------------------|----------------------------|----------|
+| USB Uart|(optional)                                                                                                   ||||
+|----:|------------------------------------------------------------------------|----------------------------|----------|
+|  1  | ESP-32 Wroom                                                           |                            | [AliExpress]()
+|  1  | 14x02 Female Pinheader 2.54mm / 0.1" Pitch SMD                         |                            | [AliExpress]()
+|  1  | 04x01 Female Pinheader 2.54mm / 0.1" Pitch SMD                         |                            | [AliExpress]()
+|  1  | 2 Pin WAGO SMD Wire to Board connector                                 |                            | [AliExpress]()
+|  1  | 3 Pin WAGO SMD Wire to Board connector                                 |                            | [AliExpress]()
+|----:|------------------------------------------------------------------------|----------------------------|----------|
 {:.table-striped}
+
+## Power Circuit
+
+Calculations as per EEV Blog #110
+
+{% include video id="qGp82xhybs4" provider="youtube"%}
+
+$$ {t_{on} \over t_{off}} = { {V_{out}+V_{f}}\over{V_{in}-V_{sat}-V_{out}} } = 0.200 $$
+
+$$ {t_{on} + t_{off}} = { {1}\over{f}} = 33.33µs $$
 
 ## Cloning
 
