@@ -2,17 +2,28 @@
 title: "First Setup"
 permalink: /docs/first-setup/
 excerpt: "Instructions and suggestions for upgrading the theme."
-last_modified_at: 2018-11-25T19:38:20-05:00
 toc: true
 ---
 
-At first boot or when no wifi setup is found, the device will create an initial Access Point for configuring the device:
-- Use the touchscreen -if available- to enter your SSD and password
-- Connect to the temporary Access Point remotely:
-  - Scan the QR on the display, if available and complete the setup on your mobile device
-  - or Check the serial log for the SSID and password to connect
+At first boot or when no wifi setup is found, the device will create an initial Access Point for configuring the device.
+If a display is connected, a QR code is displayed along the temporary SSID and password.
+
+## Using Touchscreen
+
+- Tap on the screen to start a Touch Calibration sequence:
+  - Touch the 4 courners as indicated
+- Use the touchscreen to enter your local SSID and password
+- Tap on the Checkmark button in the lower righthand corner
+
+The device will check the entered credentials and reboot if they are correct.
+
+## Using WiFi Access-Point
+
+Connect to the temporary Access Point by scanning the QR on the display, if available.
+Or Check the serial log for the SSID and password to connect.
+
 - Browse to http://192.168.4.1
-- Enter your the SSID and password for joining your own wireless network
+- Enter your the local SSID and password for joining your wireless network
 - Click Save Settings
 - The device will automatically reboot and connect to your wireless LAN
 

@@ -11,7 +11,6 @@ tags:
 - Home Electronics
 - SMD Soldering
 toc: true
-classes: wide
 ---
 
 {% include toc.html %}

@@ -5,7 +5,7 @@ excerpt: "Suggestions and Front Matter defaults for working with pages."
 toc: true
 ---
 
-{% include toc %}
+## Common Properties
 
 These are the common properties shared among all objects:
 
@@ -47,7 +47,7 @@ The maximum number of pages and objects is limited by the memory available in th
 `"page":254` indicates that the object is visible on every page. It can be used for example to specify a static menu bar.
 You can still hide the object on select pages if needed. Objects on this page appear on top of any objects on the underlying page.
 
-### Comments
+## Comments
 If any of the required `id` or `objid` properties are missing -*and the line is still valid json*- then it is interpreted as a comment. You can also use the `page` parameter in a comment to set the default page of objects without a `page` parameter.
 
 Example 1: Add a comment on a single line that is ignored.
@@ -65,7 +65,7 @@ If you then omit the `page` parameter in the lines below the comment of example 
 
 > Note: If the line is not valid json, the parsing of the rest of the file is also stopped.
 
-### Blank Lines
+## Blank Lines
 Blank lines are allowed for readability and are ignored.
 
 ## Object Types
@@ -74,7 +74,7 @@ Each object type is an ID that indicates which object type that line represents.
 Besides the common properties listed above, each object type can have specific properties.
 
 
-#### Button
+### Button
 **objid:10**
 
 ![lv_btn]({{ site.url }}{{ site.baseurl }}/assets/images/hasp/lv_ex_btn_1.png){: .align-center}

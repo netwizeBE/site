@@ -3,7 +3,7 @@ title: "Page Layout"
 permalink: /docs/pages/
 excerpt: "Suggestions and Front Matter defaults for working with pages."
 last_modified_at: 2016-11-03T11:13:12-04:00
-classes: wide
+toc: true
 ---
 
 The initial layout of the pages is defined by creating a special file on the SPIFFS file system.
