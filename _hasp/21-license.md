@@ -7,7 +7,7 @@ classes: wide
 
 The MIT License (MIT)
 
-Copyright (c) 2019-{{ site.time | date: '%Y' }} NetwiZeBE and contributors
+Copyright (c) 2019-{{ site.time | date: '%Y' }} fvanroie, netwize.be and contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -47,7 +47,7 @@ Based on the previous work of the following open source developers:
   Adafruit_GFX is distributed under the terms of the BSD License
 
 - zi Font Engine
-  Copyright© 2020 Francis Van Roie
+  Copyright© 2020 fvanroie, netwize.be
   [MIT License](http://opensource.org/licenses/MIT).
 
 - ArduinoJson
@@ -60,7 +60,7 @@ Based on the previous work of the following open source developers:
 
 - Logging engine is based on ArduinoLog,
   Copyright© 2017,2018 Thijs Elenbaas, MrRobot62, rahuldeo2047, NOX73, dhylands, Josha blemasle, mfalkvidd
-  with mofications by Francis Van Roie.
+  with mofications by fvanroie, netwize.be.
   ArduinoLog is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
 - Syslog library,
