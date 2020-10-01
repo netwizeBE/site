@@ -15,7 +15,7 @@ If a display is connected, a QR code is displayed along the temporary SSID and p
 - Use the touchscreen to enter your local SSID and password
 - Tap on the Checkmark button in the lower righthand corner
 
-The device will check the entered credentials and reboot if they are correct.
+The device will validate the entered credentials and reboot if they are correct.
 
 ## Using WiFi Access-Point
 

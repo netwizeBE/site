@@ -31,6 +31,8 @@ hasp:
         url: /docs/installation/
       - title: "First Setup"
         url: /docs/first-setup/
+      - title: "Frequently Asked Questions"
+        url: /docs/faq/
   - title: Configuration
     children:
       - title: "HTTP"

@@ -34,4 +34,4 @@ With the Hue slider you can select the base color for the built-in theme.
 
 ## OTA Upload
 
-Enter the filename of the .jsonl you have uploaded to enables the layout on startup.
+When the ESP has previously been flashed via serial, subsequent updates can be performed Over-the-Air.
