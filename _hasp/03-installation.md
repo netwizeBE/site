@@ -1,5 +1,5 @@
 ---
-title: "Installation"
+title: "Firmware Installation"
 permalink: /projects/hasp-lvgl/installation/
 excerpt: "Instructions for installing the theme for new and existing Jekyll based sites."
 last_modified_at: 2020-05-08T22:03:18+01:00
@@ -14,13 +14,13 @@ There are currently 2 download options, pick the one appropriate for your hardwa
 - hasp-lvgl-0.2.0-esp32_lolin_2.4_spi.bin
 - hasp-lvgl-0.2.0-esp8266_lolin_2.4_spi.bin
 
+[<i class="fas fa-download"></i> Hasp-lvgl Releases](https://github.com/fvanroie/hasp-lvgl/releases){: .btn .btn--info}
+
 Not yet available:
 - hasp-lvgl-0.2.0-stm32f407_devEbox_3.2_ili9341_fsmc.bin
 
 **Note** If no precompiled firmware file is available for your board you can configure, compile and upload the firmware yourself using PlatformIO.
-{: .notice--note}
-
-[<i class="fas fa-download"></i> Hasp-lvgl Releases](https://github.com/fvanroie/hasp-lvgl/releases){: .btn .btn--info}
+{: .notice--info}
 
 
 ## Install the firmware
@@ -40,7 +40,7 @@ Change `COM1` to the correct port on your computer and `4m` to the correct size 
 ### STM32F407 devEbox
 
 **Note** There is no precompiled firmware file available for STM32F4 boards. You will need to configure, compile and upload the firmware yourself using PlatformIO.
-{: .notice--note}
+{: .notice--info}
 
 #### Using Serial
 
