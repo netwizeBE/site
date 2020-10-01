@@ -1,6 +1,6 @@
 ---
 title: "License"
-permalink: /docs/license/
+permalink: /projects/hasp-lvgl/license/
 excerpt: "License for hasp-lvgl"
 classes: wide
 ---

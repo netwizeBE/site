@@ -1,6 +1,6 @@
 ---
 title: "Hardware"
-permalink: /docs/hardware/
+permalink: /projects/hasp-lvgl/hardware/
 excerpt: "How the theme is organized and what all of the files are for."
 toc: true
 ---

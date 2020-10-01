@@ -1,6 +1,6 @@
 ---
 title: "Objects"
-permalink: /docs/objects/
+permalink: /projects/hasp-lvgl/objects/
 excerpt: "Suggestions and Front Matter defaults for working with pages."
 toc: true
 ---

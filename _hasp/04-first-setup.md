@@ -1,6 +1,6 @@
 ---
 title: "First Setup"
-permalink: /docs/first-setup/
+permalink: /projects/hasp-lvgl/first-setup/
 excerpt: "Instructions and suggestions for upgrading the theme."
 toc: true
 ---

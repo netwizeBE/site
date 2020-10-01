@@ -1,6 +1,6 @@
 ---
 title: "Frequently Asked Questions"
-permalink: /docs/faq/
+permalink: /projects/hasp-lvgl/faq/
 excerpt: "Frequently Asked Questions"
 toc: true
 ---

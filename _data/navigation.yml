@@ -24,66 +24,66 @@ hasp:
   - title: Getting Started
     children:
       - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
+        url: /projects/hasp-lvgl/quick-start-guide/
       - title: "Recommended Hardware"
-        url: /docs/structure/
+        url: /projects/hasp-lvgl/hardware/
       - title: "Install Firmware"
-        url: /docs/installation/
+        url: /projects/hasp-lvgl/installation/
       - title: "First Setup"
-        url: /docs/first-setup/
+        url: /projects/hasp-lvgl/first-setup/
       - title: "Frequently Asked Questions"
-        url: /docs/faq/
+        url: /projects/hasp-lvgl/faq/
   - title: Configuration
     children:
       - title: "HTTP"
-        url: /docs/http/
+        url: /projects/hasp-lvgl/http/
       - title: "Wifi"
-        url: /docs/wifi/
+        url: /projects/hasp-lvgl/wifi/
       - title: "Mqtt"
-        url: /docs/mqtt/
+        url: /projects/hasp-lvgl/mqtt/
       - title: "HASP"
-        url: /docs/hasp/
+        url: /projects/hasp-lvgl/hasp/
       - title: "Display"
-        url: /docs/display/
+        url: /projects/hasp-lvgl/display/
       - title: "GPIO"
-        url: /docs/gpio/
+        url: /projects/hasp-lvgl/gpio/
       - title: "Debug"
-        url: /docs/debug/
+        url: /projects/hasp-lvgl/debug/
   - title: Home Automation
     children:
       - title: "Home Assistant"
-        url: /docs/hass/
+        url: /projects/hasp-lvgl/hass/
       - title: "OpenHAB"
-        url: /docs/openhab/
+        url: /projects/hasp-lvgl/openhab/
       - title: "Node-RED"
-        url: /docs/nodered/
+        url: /projects/hasp-lvgl/nodered/
       - title: "Tasmota Slave"
-        url: /docs/tasmota-slave/
+        url: /projects/hasp-lvgl/tasmota-slave/
   - title: Design Pages
     children:
       - title: "Page Layout"
-        url: /docs/pages/
+        url: /projects/hasp-lvgl/pages/
       - title: "Objects"
-        url: /docs/objects/
+        url: /projects/hasp-lvgl/objects/
       - title: "Styling"
-        url: /docs/styling/
+        url: /projects/hasp-lvgl/styling/
   - title: Firmware Update
     children:
       - title: "ESP"
-        url: /docs/firmware-esp/
+        url: /projects/hasp-lvgl/firmware-esp/
       - title: "STM32"
-        url: /docs/firmware-stm32/
+        url: /projects/hasp-lvgl/firmware-stm32/
   - title: Customization
     children:
       - title: "Compiling"
-        url: /docs/compiling/
+        url: /projects/hasp-lvgl/compiling/
       - title: "User Override"
-        url: /docs/user-override/
+        url: /projects/hasp-lvgl/user-override/
       - title: "Custom Configuration"
-        url: /docs/custom-config/
-      - title: "Old 2.2 Docs"
-        url: /docs/docs-2-2/
+        url: /projects/hasp-lvgl/custom-config/
+#      - title: "Old 2.2 Docs"
+#        url: /projects/hasp-lvgl/docs-2-2/
       - title: "License"
-        url: /docs/license/
-      - title: "Terms &amp; Privacy Policy"
-        url: /terms/
+        url: /projects/hasp-lvgl/license/
+#      - title: "Terms &amp; Privacy Policy"
+#        url: /terms/

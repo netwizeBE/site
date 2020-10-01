@@ -1,6 +1,6 @@
 ---
 title: "Debug Settings"
-permalink: /docs/debug/
+permalink: /projects/hasp-lvgl/debug/
 excerpt: "Configuration HASP"
 last_modified_at: 2020-05-12T15:35:48+02:00
 toc: true

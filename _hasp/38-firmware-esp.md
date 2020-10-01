@@ -1,6 +1,6 @@
 ---
 title: "Firmware Update ESP"
-permalink: /docs/firmware-esp/
+permalink: /projects/hasp-lvgl/firmware-esp/
 excerpt: "Updating Frimware on the ESP32 and ESP8266"
 toc: true
 ---

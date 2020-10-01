@@ -1,6 +1,6 @@
 ---
 title: "Styling"
-permalink: /docs/styling/
+permalink: /projects/hasp-lvgl/styling/
 excerpt: "Change the appearance of objects."
 toc: true
 ---

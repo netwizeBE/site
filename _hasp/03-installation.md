@@ -1,6 +1,6 @@
 ---
 title: "Installation"
-permalink: /docs/installation/
+permalink: /projects/hasp-lvgl/installation/
 excerpt: "Instructions for installing the theme for new and existing Jekyll based sites."
 last_modified_at: 2020-05-08T22:03:18+01:00
 toc: true

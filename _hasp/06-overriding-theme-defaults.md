@@ -1,6 +1,6 @@
 ---
 title: "Overriding Theme Defaults"
-permalink: /docs/overriding-theme-defaults/
+permalink: /projects/hasp-lvgl/overriding-theme-defaults/
 excerpt: "Instructions on how to customize the theme's default set of layouts, includes, and stylesheets when using the Ruby Gem version."
 last_modified_at: 2018-03-20T15:59:31-04:00
 ---

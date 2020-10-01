@@ -1,6 +1,6 @@
 ---
 title: "GPIO Settings"
-permalink: /docs/gpio/
+permalink: /projects/hasp-lvgl/gpio/
 excerpt: "Configuration HASP"
 last_modified_at: 2020-05-12T15:35:48+02:00
 toc: true

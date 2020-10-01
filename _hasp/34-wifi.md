@@ -1,6 +1,6 @@
 ---
 title: "Wifi Settings"
-permalink: /docs/wifi/
+permalink: /projects/hasp-lvgl/wifi/
 excerpt: "Configuration HASP"
 last_modified_at: 2020-05-12T15:35:48+02:00
 toc: true
