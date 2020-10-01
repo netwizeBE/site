@@ -82,6 +82,9 @@ The pinout of each header & display is difference and are not interchangable!
 You can however use jumper cables instead, but it won't be plug-and-plug anymore.
 {: .notice--warning}
 
+**Info** The STM32F4 boards do not have network connectivity. You can use a compatible network adapter and configure it in PlatformIO.
+{: .notice--info}
+
 The following boards have been tested:
 
 - STM32F407VET6 Black (v2.1) has 512 KB flash

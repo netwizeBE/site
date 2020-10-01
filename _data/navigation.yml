@@ -65,6 +65,8 @@ hasp:
         url: /docs/pages/
       - title: "Objects"
         url: /docs/objects/
+      - title: "Styling"
+        url: /docs/styling/
   - title: Firmware Update
     children:
       - title: "ESP"
