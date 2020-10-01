@@ -5,33 +5,20 @@ excerpt: "Updating Frimware on the ESP32 and ESP8266"
 toc: true
 ---
 
-## USB Upload
+## ESP Firmware Update
 
-You can configure the general look and feel for the interface by uploading you favorite fonts and selecting your favorite theme and color.
+### Serial Upload
 
-![HASP Settings](../../assets/images/2020/hasp_settings.png "HASP Settings")
+Either use Tasmotizer or esptool.py to upload a new firmware file to the ESP. This procedure is the same as the initial installation.
 
-## Serial Upload
+### HTTP Upload
 
-##### Upload
+When the ESP has previously been flashed via serial, you can upload a new firmware file using the internal webserver.
 
-With the upload function you can upload 2 types of files
- * .jsonl
-    This file contains the layout for the pages
-    See 'pages' section for more information on this file
- * .zi
-    These are font files used in the Nextion/TJC HMI disp.
+### HTTP Update
 
-## HTTP Upload
+When the ESP has previously been flashed via serial you can download and install new firmware directly from an external webserver.
 
-Select one of the built-in themes to select the general style for the HASP interface.
-With the Hue slider you can select the base color for the built-in theme.
+### OTA Upload
 
-## HTTP Update
-
-Select one of the built-in themes to select the general style for the HASP interface.
-With the Hue slider you can select the base color for the built-in theme.
-
-## OTA Upload
-
-When the ESP has previously been flashed via serial, subsequent updates can be performed Over-the-Air.
+When the ESP has previously been flashed via serial, subsequent updates can be performed Over-the-Air from within PlatformIO.
