@@ -9,95 +9,137 @@ toc: true
 
 You can adjust the appearance of objects by changing the foreground, background and/or border color of each object.
 
-<style>
-table th:first-of-type {
-    width: 12%;
-}
-table th:nth-of-type(2) {
-    width: 12%;
-}
-table th:nth-of-type(3) {
-    width: 12%;
-}
-table th:nth-of-type(4) {
-    width: 12%;
-}
-table th:last-of-type {
-    width: 48%;
-}
-</style>
-
-| Property | Value      | Required | Default | Description |
-|:---------|:----------:|:--------:|:-------:|:------------|
-| id       | 0-255      | yes      | n/a     | ID of the object on this page |
-| objid    | 0-255      | yes      | n/a     | ID of the object type *(see below)* |
-| page     | 0-255      | no       | n/a     | ID of the page the object appears on |
-| x        | int16      | no       | 0       | horizontal position on the page |
-| y        | int16      | no       | 0       | vertical position on the page |
-| w        | int16      | no       | 0       | width of the object |
-| h        | int16      | no       | 0       | height of the object |
-| enabled  | true/false | no       | true    | object is clickable |
-| hidden   | true/false | no       | false   | object is hidden |
-| opacity  | 0-255      | no       | 255     | how much the the object is opaque |
-
-If the `page` parameter is not present, the object is placed on the same page as the _previous object_. If `page` is not specified for the first object either, the _current page_ being displayed is used.
-
-The maximum number of pages and objects is limited by the memory available in the MCU.
-
-`"page":254` indicates that the object is visible on every page. It can be used for example to specify a static menu bar.
-You can still hide the object on select pages if needed. Objects on this page appear on top of any objects on the underlying page.
-
-## Comments
-If any of the required `id` or `objid` properties are missing -*and the line is still valid json*- then it is interpreted as a comment. You can also use the `page` parameter in a comment to set the default page of objects without a `page` parameter.
-
-Example 1: Add a comment on a single line that is ignored.
-```json
-{"comment":" ----------- Page 2 layout ------------"}
-```
-
-Example 2: Set the default `page` for next object(s) to `3` besides adding a comment.
-
-```json
-{"page":3,"comment":" ---- My Awesome Color Picker Layout ----"}
-```
-
-If you then omit the `page` parameter in the lines below the comment of example 2, those objects will appear on page `3`.
-
-> Note: If the line is not valid json, the parsing of the rest of the file is also stopped.
-
-## Blank Lines
-Blank lines are allowed for readability and are ignored.
-
 ## Object Types
 
 Each object type is an ID that indicates which object type that line represents.
 Besides the common properties listed above, each object type can have specific properties.
 
 
-### Button
+## Button
 **objid:10**
 
-![lv_btn]({{ site.url }}{{ site.baseurl }}/assets/images/hasp/lv_ex_btn_1.png){: .align-center}
+A button can have 3 states. All the following parameters can be appended by a number to change the appearance of that state only:
+- 0: Released
+- 1: Pressed
+- 2: Disabled
 
-| Property | Value      | Required | Default | Description
+Or if the postfix index is ommited, then the default state 0 or Pressed is used.
+
+A button can accept the attributes of the following groups:
+- Background
+- Border
+- Outline
+- Shadow
+- Value
+
+## Attribute groups
+
+### Padding and Margin
+
+Padding sets the space on the inner sides of the edges. It means "I don't want my children too close to my sides, so keep this space".Padding inner set the "gap" between the children. Margin sets the space on the outer side of the edges. It means "I want this space around me".
+
+Objects use them to set spacing. See the documentation of the objects for the details.
+
+| Property | Type      | Required | Default | Description
 |----------|------------|----------|---------|--------------
-| toggle   | boolean    | no       | true    | When enabled, creates a toggle-on/toggle-off button. If false, creates a normal button
-| val      | int16      | no       | 0       | The value: 1 for toggled, 0 for untoggled
-| txt      | string     | no       | ""      | The text of the label
-| mode     | string     | no       | expand  | The wrapping mode of long text labels
+| pad_top | int | Set the padding on the top
+| pad_bottom | int | Set the padding on the bottom
+| pad_left | int | Set the padding on the left
+| pad_right | int | Set the padding on the right
+| pad_inner | int | Set the padding inside the object between children
+| margin_top | int | Set the margin on the top
+| margin_bottom | int | Set the margin on the bottom
+| margin_left | int | Set the margin on the left
+| margin_right | int | Set the margin on the right
 
-Normal Switches send touch events out as they occor. The possible events are:
+### Background
 
-- DOWN: Occurs when a button goes from unpressed to being pressed
-- SHORT: The button was release in a short time (short click)
-- LONG: Event is send when the button is *still* being pressed after the threshold
-- HOLD: The HOLD event is repeated every 400ms while the button is still pressed
-- UP: The button is released
-- LOST: The LOST event occurs when the object looses the focus while the screen is still being touched
+| Property | Type      | Required | Default | Description
+|----------|------------|----------|---------|--------------
+| bg_opa   | byte       | no       | ""      | The background opacity level
+| bg_color   | color    | no       | true    | The background color
+| bg_grad_color | color | no       | 0       | The background gradient color
+| bg_grad_dir   | [0..2]| no       | expand  | 0 = None, 1 = Horizontal, 2 = Vertical
+| bg_grad_stop   | byte | no       | expand  | Specifies where the gradient should stop. 0: at left/top most position, 255: at right/bottom most position. Default value: 255.
+| bg_main_stop   | byte | no       | expand  | Specifies where should the gradient start. 0: at left/top most position, 255: at right/bottom most position. Default value: 0.
 
-Toggle Switches only send out their new value (0 or 1) when toggled.
+### Border
 
-Possible wrapping modes are: expand, break, dots, scroll and loop
+The border is drawn on top of the background. It has radius rounding.
+
+| Property | Type      | Required | Default | Description
+|----------|------------|----------|---------|--------------
+| border_color | color| Specifies the color of the border
+| border_opa   | byte | Specifies opacity of the border
+| border_width | byte | Set the width of the border
+| border_side  | byte | Specifies which sides of the border to draw. Can be 0=LV_BORDER_SIDE_NONE/1=LEFT/2=RIGHT/4=TOP/8=BOTTOM/15=FULL. A sum of these values is also possible to select specific sides.
+| border_post  | bool | If `true` the border will be drawn after all children have been drawn.
+
+### Shadow
+
+The shadow is a blurred area under the object.
+
+| Property | Type      | Required | Default | Description
+|----------|------------|----------|---------|--------------
+| shadow_color | color  | Specifies the color of the shadow
+| shadow_opa   | byte   | Specifies opacity of the shadow
+| shadow_width | int16  | Set the width (blur size) of the outline
+| shadow_ofs_x | int16  | Set the an X offset for the shadow
+| shadow_ofs_y | int16  | Set the an Y offset for the shadow
+| shadow_spread | byte  | make the shadow larger than the background in every direction by this value
+
+### Value
+
+Value is an arbitrary text drawn to the background. It can be a lightweighted replacement of creating label objects.
+
+| Property | Type      | Required | Default | Description
+|----------|------------|----------|---------|--------------
+| value_str | string | Text to display. Only the pointer is saved! (Don't use local variable with lv_style_set_value_str, instead use static, global or dynamically allocated data)
+| value_color | color | Color of the text
+| value_opa | byte | Opacity level of the text [0-255]
+| value_font | byte | The font ID
+| value_letter_space | int | Letter space of the text
+| value_line_space | int | Line space of the text
+| value_align | align | Alignment of the text. Can be LV_ALIGN_.... Default value: LV_ALIGN_CENTER.
+| value_ofs_x | int | X offset from the original position of the alignment
+| value_ofs_y | int | Y offset from the original position of the alignment
+
+### Text
+
+Properties for textual object.
+
+| Property | Type      | Required | Default | Description
+|----------|------------|----------|---------|--------------
+| text_color | color | Color of the text
+| text_opa  | byte | Opacity level of the text [0-255]
+| text_font | byte | Font ID
+| text_letter_space | int | Letter space of the text
+| text_line_space | int | Line space of the text
+| text_decor | byte | Add text decoration. Can be LV_TEXT_DECOR_NONE/UNDERLINE/STRIKETHROUGH
+| text_sel_color | color | Set background color of text selection
+
+### Line
+
+n/a
+
+### Image
+
+n/a
+
+### Outline
+
+n/a
+
+### Pattern
+
+n/a
+
+### Transitions
+
+n/a
+
+
+
 
 ### Checkbox
 **objid:11**
