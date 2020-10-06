@@ -5,42 +5,84 @@ excerpt: "How the theme is organized and what all of the files are for."
 toc: true
 ---
 
+## Recommended MCU
+
 There is support for the ESP8266, ESP32 and STM32F4 families of MCUs.
 Hasp-lvgl needs a compatible micro-controller with drivers supporting the attached display, touch controller, storage and network.
 
-Due to the large number of possible hardware options, a selection of recommended hardware has been made for the pre-built binaries.
+### Hardware
 
-**Please note:** The recommended hardware configurations have pre-built binaries available.
-Advanced users can build and compile their own configurations in PlatformIO, however this is not recommended or supported.
+<style>
+table th:first-of-type {
+    width: 12%;
+}
+table th:nth-of-type(2) {
+    width: 22%;
+}
+table th:nth-of-type(3) {
+    width: 22%;
+}
+table th:nth-of-type(4) {
+    width: 22%;
+}
+table th:last-of-type {
+    width: 22%;
+}
+</style>
+|            | Basic       | Standard     | Pro          | Experimental |
+|:-----------|:-----------:|:------------:|:------------:|:------------:|
+| MCU        | ESP8266     | ESP32-WROOM  | ESP32-WROVER | STM32F4      |
+| CPU Freq.  | 80Mhz       | 240Mhz       | 240Mhz       | 
+| Ram        | 80Kb        | 520Kb        | 520Kb        | 192Kb        |
+| PSRam      | no          | no           | yes          | no           |
+| Min. Flash | 4MB         | 4MB          | 4MB          | 512Kb        |
+| Display    | ILI9341 SPI | ILI9341 SPI  | ILI9341 SPI  | ILI9341 FSMC |
+| Touch      | XPT2046 SPI | XPT2046 SPI  | XPT2046 SPI  | XPT2046 SPI  |
+| Network    | Wifi        | Wifi         | Wifi         | Ethernet / Wifi |
+| Dev. Board |[ESP D1 mini][3]|[D1 mini ESP32][4]|[TTGO T7 v1.4 Mini32][5]| STM32F04VET/ZGT Black |
+| Firmware   | [Download][1] | [Download][2]  | [Download][2]  |        |
+
+[1]: https://mmistakes.github.io/minimal-mistakes/
+[2]: https://mmistakes.github.io/minimal-mistakes/
+[3]: https://www.aliexpress.com/item/32643142716.html
+[4]: https://www.aliexpress.com/item/32815530502.html
+[5]: https://www.aliexpress.com/item/32977375539.html
+
+Due to the large number of possible hardware options, a selection of ESP hardware has been made for the pre-built binaries.
+
+**Please note:** Advanced users can build and compile their own configurations in PlatformIO, however this is not supported.
 {: .notice--info}
 
 
 ## Recommended Display
 ### Lolin TFT 2.4"
 
-This is the development display of choice. It has a 320x240 ILI9341 touchscreen and supports backlight dimming via PWM. The touchcontroller is a XPT2046 Resistive Touch driver. Also it is quite cheap to get.
+A 320x240 ILI9341 SPI touchscreen with backlight dimming via PWM is quite cheap to get.
+An ILI9341 TFT display with SPI is required when using a pre-built binary.
+The touchcontroller needs to be the XPT2046 Resistive Touch driver.
+Therefor the Lolin TFT 2.4" is used as the development display of choice.
 
-The Lolin TFT 2.4" is **plug-and-play** with the recommended MCU's. If you have another MCU, you can still use this display using jumper cables. Or you can solder a row of headers at the bottom of the display to plug it into a breadboard.
+The Lolin TFT 2.4" is **plug-and-play** with the recommended ESP development boards.
+If you have another MCU, you can still use this display using jumper cables.
+Or you can solder a row of headers at the bottom of the display to plug it into a breadboard.
 
-To use PWM dimming, solder the TFT-LED pin to either D1, D2 or D4. **D4 is recommended** for Backlight control, as this leaves D1 and D2 available as GPIOs.
+To use PWM dimming on the Lolin TFT 2.4" you must solder the TFT-LED pin to either D1, D2 or D4.
+**D4 is recommended** for backlight control, as this leaves D1 and D2 available as I²C GPIOs.
 
 ![TFT-LED PWM dimming](https://github.com/fvanroie/hasp-lvgl/blob/master/docs/img/tft-led-pwm.png)
 
-**Warning** Do *not* use D3 because it is already in use for touch.
+**Warning** Do *not* use D3 for backlight control because it is already in use for touch!
 {: .notice--warning}
 
-## Recommended MCU's
-### ESP32
+#### Compatible MCU's
+##### ESP32
 
-The ESP32 is a small but powerfull microcontroller with 320KB of memory and a minimum of 4MB of flash.
-The available SPI bus is fast enough to drive the 240x320 pixel display.
-
-Lolin TFT 2.4" is **plug-and-play** with:
+Lolin TFT 2.4" is **plug-and-play** compatible with:
 - Wemos D1 Mini ESP32 *(**only** solder the inner row of the pinheaders)*
 - TTGO T7 V1.3 MINI32 ESP32 (Rev1)  *(**only** solder the inner row of the pinheaders)*
 - LOLIN D32 Pro V2.0.0 *using an **additional** TFT cable*
 
-### ESP8266
+##### ESP8266
 
 The D1 mini is a popular budget MCU used in many other projects. It can be used, but it is noticably slower then the ESP32.
 The ESP8266 only has 80KB of memory, so it is only suitable for simple UI projects.
