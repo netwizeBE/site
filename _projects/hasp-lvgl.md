@@ -75,7 +75,7 @@ git submodule update --init --recursive
 Check out the [wiki](https://github.com/fvanroie/hasp-lvgl/wiki) for how-to's, information and frequently asked questions.
 
 Join the [Discord channel][6] to chat with other users and developers.
-  <a href="https://discord.gg/VCWyuhF" class="btn btn--dicord"><i class="fab fa-fw fa-discord" aria-hidden="true"></i><span> Join Discord Channel</span></a>
+  <a href="https://discord.gg/VCWyuhF" class="btn btn--discord"><i class="fab fa-fw fa-discord" aria-hidden="true"></i><span> Join Discord Channel</span></a>
 
 
 [1]: https://github.com/aderusha/HASwitchPlate
