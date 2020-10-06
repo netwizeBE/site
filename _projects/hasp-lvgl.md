@@ -79,7 +79,7 @@ Join the [Discord channel][6] to chat with other users and developers.
 
 
 [1]: https://github.com/aderusha/HASwitchPlate
-[2]: https://github.com/lvgl/lvgl
+[2]: https://lvgl.io/
 [3]: https://littlevgl.com/themes
 [4]: https://github.com/fvanroie/HMI-Font-Pack/releases
 [5]: https://fontawesome.com/cheatsheet/
