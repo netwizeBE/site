@@ -28,29 +28,33 @@ If you're running Jekyll v3.5+ and self-hosting you can quickly install the them
 
 ### Hardware
 
-With Gem-based themes, directories such as the `assets`, `_layouts`, `_includes`, and `_sass` are stored in the theme’s gem, hidden from your immediate view. This allows for easier installation and updating as you don't have to manage any of the theme files. 
+<style>
+table th:first-of-type {
+    width: 16%;
+}
+table th:nth-of-type(2) {
+    width: 21%;
+}
+table th:nth-of-type(3) {
+    width: 21%;
+}
+table th:nth-of-type(4) {
+    width: 21%;
+}
+table th:last-of-type {
+    width: 21%;
+}
+</style>
 
-To install as a Gem-based theme:
+|          | Basic       | Standard    | Pro          | Experimental |
+|:---------|:-----------:|:-----------:|:------------:|:------------:|
+| MCU      | ESP8266     | ESP32-WROOM | ESP32-WROVER | STM32F4      |
+| Display  | ILI9341 SPI | ILI9341 SPI | ILI9341 SPI  | ILI9341 FSMC |
+| Touch    | XPT2046 SPI | XPT2046 SPI | XPT2046 SPI  | XPT2046 SPI  |
+| Network  | Wifi        | Wifi        | Wifi         | Ethernet / Wifi |
+| Flash    | >4MB        | >8Mb        | >8Mb         | >512Kb       |
+| PSRam    | no          | no          | yes          | no           |
 
-1. Add the following to your `Gemfile`:
-
-   ```ruby
-   gem "minimal-mistakes-jekyll"
-   ```
-
-2. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
-
-   ```bash
-   bundle
-   ```
-
-3. Set the `theme` in your project's Jekyll `_config.yml` file:
-
-   ```yaml
-   theme: minimal-mistakes-jekyll
-   ```
-
-To update the theme run `bundle update`.
 
 ### Firmware
 
