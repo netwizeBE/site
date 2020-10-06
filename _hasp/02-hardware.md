@@ -5,10 +5,10 @@ excerpt: "How the theme is organized and what all of the files are for."
 toc: true
 ---
 
-## Recommended MCUs
-
 Hasp-lvgl supports the ESP32, ESP8266 and STM32F4 families of microcontrollers.
 It needs a compatible micro-controller with drivers supporting the attached display, touch controller, storage and network.
+
+## Recommended MCUs
 
 <style>
 table th:first-of-type {
@@ -48,21 +48,23 @@ table th:last-of-type {
 
 *\*Due to the large number of possible hardware options this selection of polular ESP development boards has been made for the pre-built binaries.*
 
-**Please note:** Advanced users can build and compile custom configurations using PlatformIO, however this is not currently supported.
+**Note:** Advanced users can build and compile custom configurations using PlatformIO, however this is not currently supported.
 {: .notice--info}
 
 
 ## Recommended Display
 ### Lolin TFT 2.4"
 
-320x240 ILI9341 SPI touchscreens with backlight dimming via PWM are quite cheap to get.
+ILI9341 SPI touchscreens with backlight dimming via PWM are quite cheap to get.
 An ILI9341 TFT display with SPI is required when using a pre-built binary.
 The touchcontroller needs to be the XPT2046 Resistive Touch driver.
-Therefor the Lolin TFT 2.4 Touch Shield is used as the development display of choice.
 
 The Lolin TFT 2.4" is **plug-and-play** with the 3 recommended ESP development boards.
 If you have another ESP or MCU, you can still use this display using jumper cables.
 You can also solder a row of headers at the bottom of the display to plug it into a breadboard.
+Therefor the Lolin TFT 2.4 Touch Shield is used as the development display of choice.
+
+#### Backlight Control
 
 To use PWM dimming on the Lolin TFT 2.4" you must solder the TFT-LED pin to either D1, D2 or D4.
 **D4 is recommended** for backlight control, as this leaves D1 and D2 available as I²C GPIOs.
@@ -72,7 +74,10 @@ To use PWM dimming on the Lolin TFT 2.4" you must solder the TFT-LED pin to eith
 **Warning** Do *not* use D3 for backlight control because it is already in use for touch!
 {: .notice--warning}
 
-The Lolin TFT 2.4" header is **plug-and-play** compatible with these development boards:
+#### Compatible ESP boards
+
+The Lolin TFT 2.4" header is **plug-and-play** compatible with these development boards,
+no need to use any jumper cables:
 
 **ESP32:**
 - Wemos D1 Mini ESP32 *(**only** solder the inner row of the pinheaders)*
@@ -83,8 +88,9 @@ The Lolin TFT 2.4" header is **plug-and-play** compatible with these development
 - Wemos D1 Mini ESP8266
 - Lolin D1 Mini Pro ESP8266 V2.0.0
 
-If you have the Lolin TFT 2.4" Display and a compatible ESP development board, you have all the needed hardware.
+**Note:** If you have a Lolin TFT 2.4" Display and a compatible ESP development board, you have all the hardware that is needed.
 In that case you can skip ahead to the [Firmware Installation](../installation/).
+{: .notice--info}
 
 ## Alternative SPI Display
 
@@ -93,7 +99,7 @@ Any common ILI9341 320x240 4-wire SPI touchscreen with XPT2046 Resistive Touch d
 - 2.8" SKU: MSP2807
 - 3.2" SKU: MSP3218
 
-You will need to connect the pins using jumper wires:
+You will need to connect the GPIO pins using jumper wires.
 
 ## Experimental MCUs
 
