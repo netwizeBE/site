@@ -8,7 +8,7 @@ toc: true
 Hasp-lvgl supports the ESP32, ESP8266 and STM32F4 families of microcontrollers.
 It needs a compatible micro-controller with drivers supporting the attached display, touch controller, storage and network.
 
-Below is a list of recommended development boards and a TFT touchscreen, to get you up-and-running in no-time.
+Below is a list of recommended development boards and a TFT touchscreen to get you up-and-running in no time.
 
 ### Recommended Boards
 
@@ -35,20 +35,19 @@ table th:last-of-type {
 | CPU Freq.  | 80Mhz       | 240Mhz       | 240Mhz       | 168 MHz      |
 | Ram        | 80Kb        | 520Kb        | 520Kb        | 192Kb        |
 | PSRam      | no          | no           | yes          | no           |
-| Min. Flash | 4MB         | 4MB          | 4MB          | 512Kb        |
+| Minimal Flash | 4MB         | 4MB          | 4MB          | 512Kb        |
 | Display    | ILI9341 SPI | ILI9341 SPI  | ILI9341 SPI  | ILI9341 FSMC |
 | Touch      | XPT2046 SPI | XPT2046 SPI  | XPT2046 SPI  | XPT2046 SPI  |
 | Network    | Wifi        | Wifi         | Wifi         | Ethernet / Wifi |
 | Dev. Board*|[D1 mini ESP8266][3]|[D1 mini ESP32][4]|[TTGO T7 v1.4 Mini32][5]| STM32F407VET/ZGT Black |
-| Firmware   | [Download][1] | [Download][2]  | [Download][2]  |        |
+| Firmware   | [Download][1] | [Download][1]  | [Download][1]  |        |
 
-[1]: https://github.com/fvanroie/hasp-lvgl/releases
-[2]: https://github.com/fvanroie/hasp-lvgl/releases
+[1]: ../installation/
 [3]: https://www.aliexpress.com/item/32643142716.html
 [4]: https://www.aliexpress.com/item/32815530502.html
 [5]: https://www.aliexpress.com/item/32977375539.html
 
-*\*Due to the large number of possible hardware options this choice of 3 popular ESP development boards has been made for the pre-compiled binaries.*
+*\*Due to the large number of possible hardware options a selection of 3 popular ESP development boards has been made for the precompiled binaries.*
 
 **Note:** Advanced users can build and compile custom configurations using PlatformIO, however this is not currently supported.
 {: .notice--info}

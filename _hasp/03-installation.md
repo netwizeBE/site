@@ -10,11 +10,11 @@ toc: true
 
 Go to the releases page on Github to download the latest hasp-lvgl binaries.
 
+[<i class="fas fa-download"></i> Hasp-lvgl Releases](https://github.com/fvanroie/hasp-lvgl/releases){: .btn .btn--info}
+
 There are currently 2 download options, pick the one appropriate for your hardware:
 - hasp-lvgl-0.2.0-esp32_ili9341_spi.bin
 - hasp-lvgl-0.2.0-esp8266_ili9341_spi.bin
-
-[<i class="fas fa-download"></i> Hasp-lvgl Releases](https://github.com/fvanroie/hasp-lvgl/releases){: .btn .btn--info}
 
 Not yet available:
 - hasp-lvgl-0.2.0-stm32f407_devEbox_3.2_ili9341_fsmc.bin

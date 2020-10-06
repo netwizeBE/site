@@ -1,12 +1,14 @@
 ---
-title: "First Setup"
-permalink: /projects/hasp-lvgl/first-setup/
-excerpt: "Instructions and suggestions for upgrading the theme."
+title: "Wifi Setup"
+permalink: /projects/hasp-lvgl/wifi-setup/
+excerpt: "Setup the credentials for your wifi access point."
 toc: true
 ---
 
-At first boot or when no wifi setup is found, the device will create an initial Access Point for configuring the device.
-If a display is connected, a QR code is displayed along the temporary SSID and password.
+At first boot, when no wifi setup is found, the device will create an initial Access Point for configuring the device.
+If a display is connected, a QR code is displayed along the temporary SSID and password to connect.
+
+Use the touchscreen or a webbrowser to setup the credentials for your local wifi access point.
 
 ## Using Touchscreen
 

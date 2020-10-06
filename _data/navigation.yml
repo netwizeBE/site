@@ -25,12 +25,12 @@ hasp:
     children:
       - title: "Quick-Start Guide"
         url: /projects/hasp-lvgl/quick-start-guide/
-      - title: "Recommended Hardware"
+      - title: "Hardware Guide"
         url: /projects/hasp-lvgl/hardware/
-      - title: "Install Firmware"
+      - title: "Firmware Installation"
         url: /projects/hasp-lvgl/installation/
-      - title: "First Setup"
-        url: /projects/hasp-lvgl/first-setup/
+      - title: "Wifi Setup"
+        url: /projects/hasp-lvgl/wifi-setup/
       - title: "Frequently Asked Questions"
         url: /projects/hasp-lvgl/faq/
   - title: Configuration
