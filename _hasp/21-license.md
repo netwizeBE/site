@@ -30,48 +30,48 @@ SOFTWARE.
 -------------------------------------------
 Based on the previous work of the following open source developers:
 
-- The original Arduino project HASwitchPlate,
-  Copyright© 2019 Allen Derusha allen@derusha.org.
+- [HASwitchPlate](https://github.com/aderusha/HASwitchPlate), the original Arduino project,
+  Copyright© 2019 Allen Derusha.
   HASwitchPlate is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-- LVGL graphics library,
+- [LVGL](https://lvgl.io/) graphics library,
   Copyright© 2016 Gábor Kiss-Vámosi and
   Copyright© 2019 LittlevGL.
   LVGL is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-- TFT_eSPI display library,
+- [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI) display library,
   Copyright© 2020 Bodmer (https://github.com/Bodmer) All rights reserved.
-  TFT_eSPI is distributed under the terms of the FreeBSD License
-  and includes parts from the Adafruit_GFX library,
+  TFT_eSPI is distributed under the terms of the [FreeBSD License](https://opensource.org/licenses/BSD-2-Clause)
+  and includes parts from the [Adafruit_GFX library](https://github.com/adafruit/Adafruit-GFX-Library),
   Copyright© 2012 Adafruit Industries. All rights reserved.
-  Adafruit_GFX is distributed under the terms of the BSD License
+  Adafruit_GFX is distributed under the terms of the [BSD License](https://opensource.org/licenses/BSD-2-Clause)
 
 - zi Font Engine
   Copyright© 2020 fvanroie, netwize.be
   [MIT License](http://opensource.org/licenses/MIT).
 
-- ArduinoJson
+- [ArduinoJson](https://arduinojson.org/)
   Copyright© 2014-2020 Benoit BLANCHON
   [MIT License](http://opensource.org/licenses/MIT).
 
-- PubSubClient
+- [PubSubClient](https://github.com/knolleary/pubsubclient)
   Copyright© 2008-2015 Nicholas O'Leary
   [MIT License](http://opensource.org/licenses/MIT).
 
-- Logging engine is based on ArduinoLog,
+- Logging engine is based on [ArduinoLog](https://github.com/thijse/Arduino-Log),
   Copyright© 2017,2018 Thijs Elenbaas, MrRobot62, rahuldeo2047, NOX73, dhylands, Josha blemasle, mfalkvidd
   with modifications by fvanroie, netwize.be.
   ArduinoLog is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-- Syslog library,
+- [Syslog library](https://github.com/arcao/Syslog),
   Copyright© 2016 Martin Sloup
   [MIT License](http://opensource.org/licenses/MIT).
 
-- QR Code generator
+- [QR Code generator](https://github.com/nayuki/QR-Code-generator)
   Copyright© Project Nayuki
   [MIT License](http://opensource.org/licenses/MIT).
 
-- AceButton
+- [AceButton](https://github.com/bxparks/AceButton)
   Copyright© 2018 Brian T. Park
   [MIT License](http://opensource.org/licenses/MIT).
 
@@ -84,6 +84,6 @@ Based on the previous work of the following open source developers:
   Copyright© 2014, Austin Andrews (http://materialdesignicons.com/),
   MaterialDesign Icons font is licensed under the SIL Open Font License, Version 1.1.
 
-- This website theme is based on [Minimal Mistakes](https://mmistakes.github.io),
+- This website theme is based on [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/),
   Copyright© 2013-2020 Michael Rose and contributors
   [MIT License](http://opensource.org/licenses/MIT).
