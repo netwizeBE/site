@@ -72,7 +72,7 @@ To use PWM dimming on the Lolin TFT 2.4" you must solder the TFT-LED pin to eith
 **Warning** Do *not* use D3 for backlight control because it is already in use for touch!
 {: .notice--warning}
 
-Lolin TFT 2.4" is **plug-and-play** compatible with these development boards:
+The Lolin TFT 2.4" header is **plug-and-play** compatible with these development boards:
 
 **ESP32:**
 - Wemos D1 Mini ESP32 *(**only** solder the inner row of the pinheaders)*
@@ -114,9 +114,9 @@ and accompanying 3.2" ILI9341 FSMC screen (320x240). This hardware is experiment
 
 **Warning** Make sure to purchase a compatible screen, preferably from the same vendor.
 There are multiple FSMC interfaces: e.g. One is marked `TFT`, another is marked `New-TFT` and
-a third has no marking.
+a third has no markings.
 The pinout of each header & display is different and are **not** interchangable!
-</br>You can however use jumper cables instead, but it won't be plug-and-plug anymore.
+<br>You can however use jumper cables instead, but it won't be plug-and-plug anymore.
 {: .notice--warning}
 
 The following boards are being tested:
