@@ -20,7 +20,7 @@ main:
 # documentation links
 hasp:
   - title: Overview
-    url: /projects/hasp-lvgl/
+    url: /hasp-lvgl/
   - title: Getting Started
     children:
       - title: "Quick-Start Guide"

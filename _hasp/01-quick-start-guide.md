@@ -30,19 +30,19 @@ If you're running Jekyll v3.5+ and self-hosting you can quickly install the them
 
 <style>
 table th:first-of-type {
-    width: 16%;
+    width: 12%;
 }
 table th:nth-of-type(2) {
-    width: 21%;
+    width: 22%;
 }
 table th:nth-of-type(3) {
-    width: 21%;
+    width: 22%;
 }
 table th:nth-of-type(4) {
-    width: 21%;
+    width: 22%;
 }
 table th:last-of-type {
-    width: 21%;
+    width: 22%;
 }
 </style>
 |            | Basic       | Standard     | Pro          | Experimental |
@@ -56,7 +56,7 @@ table th:last-of-type {
 | Touch      | XPT2046 SPI | XPT2046 SPI  | XPT2046 SPI  | XPT2046 SPI  |
 | Network    | Wifi        | Wifi         | Wifi         | Ethernet / Wifi |
 | Dev. Board |[ESP D1 mini][3]|[D1 mini ESP32][4]|[TTGO T7 v1.4 Mini32][5]| STM32F04VET/ZGT Black |
-| Firmware   | [Download][1] | [Download][2]  | [Download][2]  | *n/a* |
+| Firmware   | [Download][1] | [Download][2]  | [Download][2]  |        |
 
 [1]: https://mmistakes.github.io/minimal-mistakes/
 [2]: https://mmistakes.github.io/minimal-mistakes/
