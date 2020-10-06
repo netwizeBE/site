@@ -29,7 +29,7 @@ This version also adds ESP32 and STM32 support to take advantage of the addition
 
 
 ## Demo Screens
-{% include gallery caption="This is a sample gallery to go along with this case study." %}
+{% include gallery caption="This is a sample of controls that can are available to use." %}
 
 ## Features
 
@@ -47,32 +47,9 @@ This version also adds ESP32 and STM32 support to take advantage of the addition
 | PNG images              | ❌ no | ❔ tbd | ❔ tbd 
 | Network                 | 📶 Wifi | 📶 Wifi | ✅ Ethernet
 
-## Cloning
-
-Make sure to add the `--recursive` parameter when cloning the project. Otherwise git will not download the required submodules in the `/lib` subdirectory.
-
-```bash
-git clone --recursive https://github.com/fvanroie/hasp-lvgl
-```
-
-If you already cloned hasp-lvgl without the submodules, you can fetch the submodules seperately using:
-
-```bash
-git submodule update --init --recursive
-```
-
-To build a different branch use:
-
-```bash
-git clone --recursive https://github.com/fvanroie/hasp-lvgl
-cd hasp-lvgl
-git checkout 0.2.0
-git submodule update --init --recursive
-```
-
 ## Getting Started
 
-Check out the [wiki](https://github.com/fvanroie/hasp-lvgl/wiki) for how-to's, information and frequently asked questions.
+Check out the [Quick-Start Guide](..projects/hasp-lvgl/hardware/) for information, how-to's, examples and frequently asked questions.
 
 Join the [Discord channel][6] to chat with other users and developers.
   <a href="https://discord.gg/VCWyuhF" class="btn btn--discord"><i class="fab fa-fw fa-discord" aria-hidden="true"></i><span> Join Discord Channel</span></a>
