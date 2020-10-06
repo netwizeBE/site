@@ -5,12 +5,10 @@ excerpt: "How the theme is organized and what all of the files are for."
 toc: true
 ---
 
-## Recommended MCU
+## Recommended MCUs
 
 Hasp-lvgl supports the ESP32, ESP8266 and STM32F4 families of MCUs.
 It needs a compatible micro-controller with drivers supporting the attached display, touch controller, storage and network.
-
-### Hardware
 
 <style>
 table th:first-of-type {
@@ -112,10 +110,10 @@ and accompanying 3.2" ILI9341 FSMC screen (320x240). This hardware is experiment
 </figure>
 
 **Warning** Make sure to purchase a compatible screen, preferably from the same vendor.
-There are multiple FSMC interfaces: e.g. One is marked "TFT", another is marked "New-TFT" and
+There are multiple FSMC interfaces: e.g. One is marked `TFT`, another is marked `New-TFT` and
 a third has no marking.
-The pinout of each header & display is difference and are not interchangable!
-You can however use jumper cables instead, but it won't be plug-and-plug anymore.
+The pinout of each header & display is different and are **not** interchangable!
+</br>You can however use jumper cables instead, but it won't be plug-and-plug anymore.
 {: .notice--warning}
 
 **Info** The STM32F4 boards do not have network connectivity. You can use a compatible network adapter and configure it in PlatformIO.
@@ -133,7 +131,6 @@ The following boards are being tested:
     - Purchase Link:
             [AliExpress](https://www.aliexpress.com/item/32618222721.html)
             [AliExpress](https://www.aliexpress.com/item/33013274704.html)
-            [AliExpress](https://www.aliexpress.com/item/32868515918.html)
             [AliExpress](https://www.aliexpress.com/item/1000006481553.html) (! V2.0 !)
     - Documentation can be found on [GitHub](https://github.com/mcauser/BLACK_F407VE) 
 
