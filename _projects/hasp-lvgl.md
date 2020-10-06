@@ -22,7 +22,8 @@ classes: wide
 
 This project is a re-implementation of the popular HASwitchPlate sketch created by aderusha.
 The [original HASwitchPlate][1] project uses a Wemos D1 mini and requires a Nextion/TJC HMI display.
-This rewrite removes the Nextion/TJC requirement by using the [Littlev Graphics Library][2] on the MCU to drive a cheap commodity display.
+This rewrite removes the Nextion/TJC requirement by running the [Light and Versatile Graphics Library][2]
+on the MCU to drive a cheap commodity display.
 
 This version also adds ESP32 and STM32 support to take advantage of the additional hardware capabilities.
 
@@ -60,12 +61,12 @@ If you already cloned hasp-lvgl without the submodules, you can fetch the submod
 git submodule update --init --recursive
 ```
 
-To build a defierent branch use:
+To build a different branch use:
 
 ```bash
 git clone --recursive https://github.com/fvanroie/hasp-lvgl
 cd hasp-lvgl
-git checkout 0.1.0-dev
+git checkout 0.2.0
 git submodule update --init --recursive
 ```
 
@@ -73,8 +74,13 @@ git submodule update --init --recursive
 
 Check out the [wiki](https://github.com/fvanroie/hasp-lvgl/wiki) for how-to's, information and frequently asked questions.
 
+Join the [Discord channel][6] to chat with other users and developers.
+  <a href="https://discord.gg/VCWyuhF" class="btn btn--dicord"><i class="fab fa-fw fa-discord" aria-hidden="true"></i><span> Join Discord Channel</span></a>
+
+
 [1]: https://github.com/aderusha/HASwitchPlate
-[2]: https://github.com/littlevgl/lvgl
+[2]: https://github.com/lvgl/lvgl
 [3]: https://littlevgl.com/themes
 [4]: https://github.com/fvanroie/HMI-Font-Pack/releases
 [5]: https://fontawesome.com/cheatsheet/
+[6]: https://discord.gg/VCWyuhF
