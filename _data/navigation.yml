@@ -19,10 +19,10 @@ main:
 
 # documentation links
 hasp:
-  - title: Overview
-    url: /hasp-lvgl/
   - title: Getting Started
     children:
+      - title: Overview
+        url: /hasp-lvgl/
       - title: "Quick-Start Guide"
         url: /projects/hasp-lvgl/quick-start-guide/
       - title: "Hardware Guide"

@@ -49,7 +49,7 @@ This version also adds ESP32 and STM32 support to take advantage of the addition
 
 ## Getting Started
 
-Check out the [Quick-Start Guide](..projects/hasp-lvgl/hardware/) for information, how-to's, examples and frequently asked questions.
+Check out the [Quick-Start Guide](../projects/hasp-lvgl/hardware/) for information, how-to's, examples and frequently asked questions.
 
 Join the [Discord channel][6] to chat with other users and developers.
   <a href="https://discord.gg/VCWyuhF" class="btn btn--discord"><i class="fab fa-fw fa-discord" aria-hidden="true"></i><span> Join Discord Channel</span></a>
