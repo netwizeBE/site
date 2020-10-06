@@ -67,9 +67,11 @@ hasp:
         url: /projects/hasp-lvgl/objects/
       - title: "Styling"
         url: /projects/hasp-lvgl/styling/
+      - title: "Example pages.jsonl"
+        url: /projects/hasp-lvgl/example-pages/
   - title: Firmware Update
     children:
-      - title: "ESP"
+      - title: "ESP32 / ESP8266"
         url: /projects/hasp-lvgl/firmware-esp/
       - title: "STM32"
         url: /projects/hasp-lvgl/firmware-stm32/
