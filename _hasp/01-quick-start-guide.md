@@ -45,16 +45,24 @@ table th:last-of-type {
     width: 21%;
 }
 </style>
+|            | Basic       | Standard     | Pro          | Experimental |
+|:-----------|:-----------:|:------------:|:------------:|:------------:|
+| MCU        | ESP8266     | ESP32-WROOM  | ESP32-WROVER | STM32F4      |
+| CPU Freq.  | 80Mhz       | 240Mhz       | 240Mhz       | 
+| Ram        | 80Kb        | 520Kb        | 520Kb        | 192Kb        |
+| PSRam      | no          | no           | yes          | no           |
+| Min. Flash | 4MB         | 4MB          | 4MB          | 512Kb        |
+| Display    | ILI9341 SPI | ILI9341 SPI  | ILI9341 SPI  | ILI9341 FSMC |
+| Touch      | XPT2046 SPI | XPT2046 SPI  | XPT2046 SPI  | XPT2046 SPI  |
+| Network    | Wifi        | Wifi         | Wifi         | Ethernet / Wifi |
+| Dev. Board | ESP D1 mini[3]| D1 mini ESP32[4]| TTGO T7 v1.4[5]| STM32F04VET/ZGT Black |
+| Firmware   | Download[1] | Download[2]  | Download[2]  | n/a |
 
-|          | Basic       | Standard    | Pro          | Experimental |
-|:---------|:-----------:|:-----------:|:------------:|:------------:|
-| MCU      | ESP8266     | ESP32-WROOM | ESP32-WROVER | STM32F4      |
-| Display  | ILI9341 SPI | ILI9341 SPI | ILI9341 SPI  | ILI9341 FSMC |
-| Touch    | XPT2046 SPI | XPT2046 SPI | XPT2046 SPI  | XPT2046 SPI  |
-| Network  | Wifi        | Wifi        | Wifi         | Ethernet / Wifi |
-| Flash    | >4MB        | >8Mb        | >8Mb         | >512Kb       |
-| PSRam    | no          | no          | yes          | no           |
-
+[1]: https://mmistakes.github.io/minimal-mistakes/
+[2]: https://mmistakes.github.io/minimal-mistakes/
+[3]: https://www.aliexpress.com/item/32643142716.html
+[4]: https://www.aliexpress.com/item/32815530502.html
+[5]: https://www.aliexpress.com/item/32977375539.html
 
 ### Firmware
 
