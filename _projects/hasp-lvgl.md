@@ -3,8 +3,8 @@ title: "HASP-lvgl"
 excerpt: "HomeAutomation Switchplate based on LittlevGL"
 permalink: /hasp-lvgl/
 header:
-  image: https://via.placeholder.com/1024x240?text=Visit+WhoIsHostingThis.com+Buyers+Guide
-  teaser: https://via.placeholder.com/350x250.png?text=Visit+WhoIsHostingThis.com+Buyers+Guide
+  image: /assets/images/hasp/header.png
+  teaser: /assets/images/hasp/header-small.png
 sidebar:
   - nav: "hasp"
 gallery:

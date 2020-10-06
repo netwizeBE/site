@@ -7,7 +7,7 @@ classes: wide
 
 The MIT License (MIT)
 
-Copyright (c) 2019-{{ site.time | date: '%Y' }} fvanroie, netwize.be and contributors
+Hasp-lvgl is Copyright (c) 2019-{{ site.time | date: '%Y' }} fvanroie, netwize.be and contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -28,7 +28,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 -------------------------------------------
-Based on the previous work of the following open source developers:
+Hasp-lvgl is based on the previous work of the following open source developers:
 
 - [HASwitchPlate](https://github.com/aderusha/HASwitchPlate), the original Arduino project,
   Copyright© 2019 Allen Derusha.
@@ -36,7 +36,7 @@ Based on the previous work of the following open source developers:
 
 - [LVGL](https://lvgl.io/) graphics library,
   Copyright© 2016 Gábor Kiss-Vámosi and
-  Copyright© 2019 LittlevGL.
+  Copyright (c) 2020 LVGL LLC.
   LVGL is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
 - [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI) display library,
