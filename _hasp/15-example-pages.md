@@ -1,6 +1,6 @@
 ---
 title: "Example pages.jsonl"
-permalink: /projects/hasp-lvgl/objects/
+permalink: /projects/hasp-lvgl/example-pages/
 excerpt: "A real-world example of a pages.jsonl file."
 toc: true
 ---
