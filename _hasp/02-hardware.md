@@ -7,7 +7,7 @@ toc: true
 
 ## Recommended MCUs
 
-Hasp-lvgl supports the ESP32, ESP8266 and STM32F4 families of MCUs.
+Hasp-lvgl supports the ESP32, ESP8266 and STM32F4 families of microcontrollers.
 It needs a compatible micro-controller with drivers supporting the attached display, touch controller, storage and network.
 
 <style>
