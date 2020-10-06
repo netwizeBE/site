@@ -10,7 +10,7 @@ toc: true
 
 To restrict access to the web user interface you can set a Username and Password.
 
-![HTTP configuration](../../assets/images/2020/configuration.png "HTTP configuration")
+![HTTP configuration](../../../assets/images/2020/configuration.png "HTTP configuration")
 
 Click 'Save Settings' to activate.
 

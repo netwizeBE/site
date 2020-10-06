@@ -115,7 +115,7 @@ Properties for textual object.
 | text_font | byte | Font ID
 | text_letter_space | int | Letter space of the text
 | text_line_space | int | Line space of the text
-| text_decor | byte | Add text decoration. Can be LV_TEXT_DECOR_NONE/UNDERLINE/STRIKETHROUGH
+| text_decor | byte | Add text decoration. 0=None, 1=Underline, 2=Strikethrough, 3=Underline&Strikethrough
 | text_sel_color | color | Set background color of text selection
 
 ### Line

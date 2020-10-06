@@ -12,7 +12,7 @@ All communication between **HASP Open Display** and your Home Automation service
 
 :question: If you do not know what MQTT is you can find more about the protocol on [MQTT Essentials](http://www.hivemq.com/mqtt-essentials/)
 
-![MQTT Settings](../../assets/images/2020/mqtt_settings.png "MQTT Settings")
+![MQTT Settings](../../../assets/images/2020/mqtt_settings.png "MQTT Settings")
 
 
 ### MQTT Settings
