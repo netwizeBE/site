@@ -83,6 +83,9 @@ Lolin TFT 2.4" is **plug-and-play** compatible with these development boards:
 - Wemos D1 Mini ESP8266
 - Lolin D1 Mini Pro ESP8266 V2.0.0
 
+If you have the Lolin TFT 2.4" Display and a compatible ESP development board, you have all the needed hardware.
+In that case you can skip ahead to the [Firmware Installation](../installation/).
+
 ## Alternative SPI Display
 
 Any common ILI9341 320x240 4-wire SPI touchscreen with XPT2046 Resistive Touch driver can be used, like:
@@ -92,7 +95,7 @@ Any common ILI9341 320x240 4-wire SPI touchscreen with XPT2046 Resistive Touch d
 
 You will need to connect the pins using jumper wires:
 
-## Alternative MCU
+## Experimental MCUs
 
 ### STM32F407xxT Black Combo
 
@@ -115,9 +118,6 @@ a third has no marking.
 The pinout of each header & display is different and are **not** interchangable!
 </br>You can however use jumper cables instead, but it won't be plug-and-plug anymore.
 {: .notice--warning}
-
-**Info** The STM32F4 boards do not have network connectivity. You can use a compatible network adapter and configure it in PlatformIO.
-{: .notice--info}
 
 The following boards are being tested:
 
@@ -145,7 +145,7 @@ The following boards are being tested:
     - Documentation can be found on [GitHub](https://github.com/mcauser/BLACK_F407ZG) 
 
 
-**Note** The STM32F407xx Black development boards do not have onboard network connectivity.
+**Info** The STM32F4 boards do not have network connectivity. You can use a compatible network adapter and configure it in PlatformIO.
 {: .notice--info}
 
 <sub>Images of STM32 boards are [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) from https://stm32-base.org/</sub>
