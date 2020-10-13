@@ -9,9 +9,9 @@ At first boot, when no wifi setup is found, the device will create an initial Ac
 If a display is connected, a QR code is displayed along the temporary SSID and password to connect.
 
 <figure class="third">
-    <a href="/site/assets/images/hasp/oobe_sestup.png"><img src="/site/assets/images/hasp/oobe_sestup.png"></a>
-    <a href="/site/assets/images/hasp/wifi_sestup.png"><img src="/site/assets/images/hasp/wifi_sestup.png"></a>
-	<figcaption>Selection of STM32F407 boards.</figcaption>
+    <a href="/site/assets/images/hasp/oobe_setup.png"><img src="/site/assets/images/hasp/oobe_seup.png"></a>
+    <a href="/site/assets/images/hasp/wifi_setup.png"><img src="/site/assets/images/hasp/wifi_setup.png"></a>
+	<figcaption>Out-Of-Box-Experience</figcaption>
 </figure>
 
 Use the touchscreen or a webbrowser to setup the credentials for your local wifi access point.
