@@ -6,22 +6,22 @@ toc: true
 ---
 
 At first boot, when no wifi setup is found, the device will create an initial Access Point for configuring the device.
-If a display is connected, a QR code is displayed along the temporary SSID and password to connect.
+If the touchscreen is properly connected it will display a QR code, along with a temporary SSID and password, to connect to the device.
 
 <figure class="third">
     <a href="/site/assets/images/hasp/oobe_setup.png"><img src="/site/assets/images/hasp/oobe_setup.png"></a>
+    <a href="/site/assets/images/hasp/touch_calibration.png"><img src="/site/assets/images/hasp/touch_calibration.png"></a>
     <a href="/site/assets/images/hasp/wifi_setup.png"><img src="/site/assets/images/hasp/wifi_setup.png"></a>
-	<figcaption>Out-Of-Box-Experience</figcaption>
 </figure>
 
-Use the touchscreen interface or connect via a webbrowser to setup the credentials for your local wifi access point:
+Either use the touchscreen interface or connect via a webbrowser to setup the credentials for your local wifi access point:
 
 ## Using Touchscreen
 
-- Tap on the screen to start a Touch Calibration sequence:
-  - Touch the 4 courners as indicated
-- Use the touchscreen to enter your local SSID and password
-- Tap on the Checkmark button in the lower righthand corner
+1. Tap on the screen to start a Touch Calibration sequence:
+2. Precisely touch the 4 courners as indicated
+3. Use the on-screen keyboard to enter your local SSID and password
+  - Tap on the Checkmark button in the lower righthand corner to save the settings
 
 The device will validate the entered credentials and reboot if they are correct.
 
@@ -31,7 +31,7 @@ Connect to the temporary Access Point by scanning the QR on the display, if avai
 Or Check the serial log for the SSID and password to connect.
 
 - Browse to http://192.168.4.1
-- Enter your the local SSID and password for joining your wireless network
+- Enter your local SSID and password for joining the device to your wireless network
 - Click Save Settings
 - The device will automatically reboot and connect to your wireless LAN
 
