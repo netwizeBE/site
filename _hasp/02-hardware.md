@@ -68,12 +68,15 @@ Therefor the Lolin TFT 2.4 Touch Shield is used as the development display of ch
 ##### Backlight Control
 
 To use PWM dimming on the Lolin TFT 2.4" you must solder the TFT-LED pin to either D1, D2 or D4.
-**D4 is recommended** for backlight control, as this leaves D1 and D2 available as I²C GPIOs.
+**D1 is recommended** for backlight control and configured by default.
 
 ![TFT-LED PWM dimming](https://github.com/fvanroie/hasp-lvgl/blob/master/docs/img/tft-led-pwm.png)
 
 **Warning** Do *not* use D3 for backlight control because it is already in use for touch!
 {: .notice--warning}
+
+**Note** It is also *not* recommended to use D4 for backlight control because it is already in use for PSram on the ESP32-Wrover.
+{: .notice--info}
 
 ##### Compatible ESP boards
 
