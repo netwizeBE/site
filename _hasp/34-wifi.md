@@ -8,40 +8,31 @@ toc: true
 
 ## Wifi
 
-You can configure the general look and feel for the interface by uploading you favorite fonts and selecting your favorite theme and color.
+When using a wireless network adapter, you need to configure the SSID to connect.
 
-![HASP Settings](../../../assets/images/2020/hasp_settings.png "HASP Settings")
+![HASP Settings](../../../assets/images/2020/wifi_settings.png "Wifi Settings")
 
-### HASP Settings
+### Wifi Settings
 
-#### Upload
+#### SSID
 
-With the upload function you can upload 2 types of files
- * .jsonl
-    This file contains the layout for the pages
-    See 'pages' section for more information on this file
- * .zi
-    These are font files used in the Nextion/TJC HMI disp.
+The name of the access point to connect to.
 
-#### UI Theme and Hue
+#### Password
 
-Select one of the built-in themes to select the general style for the HASP interface.
-With the Hue slider you can select the base color for the built-in theme.
-
-#### Startup layout
-
-Enter the filename of the .jsonl you have uploaded to enables the layout on startup.
-
-#### Startup Page
-
-Select to what page the display should switch on startup.
-
-#### Startup brightness
-
-Select the brightness level of the display on startup.
-*Please note that the display must support dim feature and GPIO for dim is set in display setup.*
+Optional password for the access point, if required.
 
 ---
 
 Click 'Save Settings' to save you settings to the device. A restart is required to make the settings active. Navigate back to the Main Menu and click Restart to activate the settings.
 
+
+## Commandline
+
+You can also configure the wifi settings via the serial or telnet console:
+
+```bash
+ssid myAccessPointName
+pass myWifiPassword
+reboot
+```

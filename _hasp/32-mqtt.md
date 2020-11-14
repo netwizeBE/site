@@ -41,3 +41,16 @@ Enter credentials if your *MQTT Broker* requires a Username and Password.
 
 Click 'Save Settings' to save you settings to the device. A restart is required to make the settings active. Navigate back to the Main Menu and click Restart to activate the settings.
 
+
+## Commandline
+
+You can also configure the mqtt settings via the serial or telnet console:
+
+```bash
+hostname myPlateName
+mqtthost 192.168.0.123
+mqttport 1883
+mqttuser myUsername
+mqttuser myPassword
+reboot
+```
