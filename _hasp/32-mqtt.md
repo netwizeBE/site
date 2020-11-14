@@ -2,7 +2,7 @@
 title: "MQTT Settings"
 permalink: /projects/hasp-lvgl/mqtt/
 excerpt: "Configuration MQTT"
-last_modified_at: 2020-05-11T15:35:48+02:00
+last_modified_at: 2020-11-14T15:35:48+02:00
 toc: true
 ---
 
@@ -51,6 +51,6 @@ hostname myPlateName
 mqtthost 192.168.0.123
 mqttport 1883
 mqttuser myUsername
-mqttuser myPassword
+mqttpass myPassword
 reboot
 ```

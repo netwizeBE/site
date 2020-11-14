@@ -35,5 +35,15 @@ Or Check the serial log for the SSID and password to connect.
 - Click Save Settings
 - The device will automatically reboot and connect to your wireless LAN
 
+## Using Command line
+
+You can also directly configure the wifi settings via the serial console:
+
+```bash
+ssid myAccessPointName
+pass myWifiPassword
+reboot
+```
+
 **Note:** To skip this step, wifi credentials can be saved into the .bin file when you compile the firmware yourself.
 {: .notice--info}
