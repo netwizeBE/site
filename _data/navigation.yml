@@ -49,6 +49,10 @@ hasp:
         url: /projects/hasp-lvgl/gpio/
       - title: "Debug"
         url: /projects/hasp-lvgl/debug/
+  - title: Usage
+    children:
+      - title: "Command Reference"
+        url: /projects/hasp-lvgl/commands/
   - title: Home Automation
     children:
       - title: "Home Assistant"
