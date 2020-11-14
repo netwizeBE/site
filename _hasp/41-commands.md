@@ -1,21 +1,21 @@
 ---
-title: "Frequently Asked Questions"
-permalink: /projects/hasp-lvgl/faq/
-excerpt: "Frequently Asked Questions"
+title: "Command Reference"
+permalink: /projects/hasp-lvgl/commands/
+excerpt: "Command Reference"
 toc: true
 ---
 
 ## Command Reference
 
-**page** [1-12]
+`page` [1-12]
 
 Switches the display to show the objects from a diferent page.
 
-**clearpage** [1-12,254]
+`clearpage` [1-12,254]
 
 Deletes all object from a given page. If no page number is specified, it clears the current page.
 
-**dim** [0-100] (alias: `brightness`)
+`dim` [0-100] (alias: `brightness`)
 
 Sets the level of the backlight from 0 to 100%, where 0% is off and 100% is full brightness.
 
@@ -23,7 +23,7 @@ Sets the level of the backlight from 0 to 100%, where 0% is off and 100% is full
 
 Tip: this can be used in conjunction with the idle event, e.g. to dim the backlight after a short period of inactivity.
 
-** light ** (bool)
+` light ` (bool)
 
 Switches the backlight on or off, independent of the set dim level.
 Turning the backlight on will restore the brightness to the previous dim level.
@@ -34,25 +34,25 @@ Tip: this can be used in conjunction with the idle event, e.g. to turn the backl
 
     Note: The `dim`and `light` command depends on a GPIO pin to be connected to control the the TFT_LED backlight via a transistor.
 
-**wakeup**
+`wakeup`
 
 Clears the idle state of the device and publishes an `state/idle = OFF` status message.
 This is helpfull e.g. when you want to wake up the display when an external event has occured, like a PIR motion sensor.
 
-**calibrate**
+`calibrate`
 
 Start on-screen touch calibration.
 
 Note: You need to issue a soft reboot command to save the new calibration settings. If you do a hard reset of the device, the calibration settings will be lost.
 
-**screenshot**
+`screenshot`
 
 Saves a picture of the current screen to the flash filesystem. You can retrieve it via http://<ip-address>/screenshot.bmp
 This can be handy for error reporting.
 
 The previous screenshot is overwritten.
 
-**statusupdate**
+`statusupdate`
 
 Reports the status of the MCU. The response will be posted to the state topic:
 ```json
@@ -68,11 +68,11 @@ Reports the status of the MCU. The response will be posted to the state topic:
     }
 ```
 
-**reboot** (alias: `restart`)
+`reboot` (alias: `restart`)
 
 Reboots the device.
 
-**factoryreset**
+`factoryreset`
 
 Clears the filesystem and eeprom and reboot the device in its initial state.
 
@@ -82,32 +82,32 @@ Warning: There is no confirmation prompt!
 
 ### Wifi
 
-**ssid**
+`ssid`
 
 Sets network name of the access point to connect to.
 
-**pass**
+`pass`
 
 Sets the optional password for the access point to connect to.
 
 ### MQTT
 
-**hostname**
+`hostname`
 
 Sets the hostname of the device and mqtt topic for the node to `hasp/<hostname>/`
 
-**mqtthost**
+`mqtthost`
 
 Sets the hostname of the mqtt broker.
 
-**mqttport**
+`mqttport`
 
 Sets the port of the mqtt broker.
 
-**mqttuser**
+`mqttuser`
 
 Sets the optional username for the mqtt broker.
 
-**mqttpass**
+`mqttpass`
 
 Sets the optional password for the mqtt broker.
