@@ -77,3 +77,37 @@ Reboots the device.
 Clears the filesystem and eeprom and reboot the device in its initial state.
 
 Warning: There is no confirmation prompt!
+
+## Configuration Settings
+
+### Wifi
+
+**ssid**
+
+Sets network name of the access point to connect to.
+
+**pass**
+
+Sets the optional password for the access point to connect to.
+
+### MQTT
+
+**hostname**
+
+Sets the hostname of the device and mqtt topic for the node to `hasp/<hostname>/`
+
+**mqtthost**
+
+Sets the hostname of the mqtt broker.
+
+**mqttport**
+
+Sets the port of the mqtt broker.
+
+**mqttuser**
+
+Sets the optional username for the mqtt broker.
+
+**mqttpass**
+
+Sets the optional password for the mqtt broker.
