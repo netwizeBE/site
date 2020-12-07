@@ -27,25 +27,24 @@ Not yet available:
 
 ### ESP32
 
-When flashing the ESP32 for the first time, you need to install a bootloader to it:
+When flashing the ESP32 for the first time, you need to install a bootloader, partitionscheme and application loader:
 ```
-esptool.py --port "COM6" --baud 921600 erase_flash
-esptool.py --port "COM6" --baud 921600 write_flash 0x1000 bootloader_dio_40m.bin
-esptool.py --port "COM6" --baud 921600 write_flash 0x8000 partitions.bin
-esptool.py --port "COM6" --baud 921600 write_flash 0xe000 boot_app0.bin
-```
-
-```
-esptool.py --port "COM6" --baud 921600 write_flash 0x10000 d1-mini-esp32_ili9341_<version>.bin
+esptool.py --port "COM6" erase_flash
+esptool.py --port "COM6" write_flash 0x1000 bootloader_dio_40m.bin --flash_mode dio --flash_freq 40m
+esptool.py --port "COM6" write_flash 0x8000 partitions.bin
+esptool.py --port "COM6" write_flash 0xe000 boot_app0.bin
 ```
 
-or in one commandline:
+then flash the actual firmware:
 
 ```
-esptool.py --chip esp32  --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 40m --flash_size detect \
-0x1000 bootloader_dio_40m.bin \
-0x8000 partitions.bin \
-0xe000 boot_app0.bin 0x10000 0x10000 firmware.bin
+esptool.py -p "COM6" --baud 921600 write_flash 0x10000 d1-mini-esp32_ili9341_<version>.bin
+```
+
+or all previous steps in one long commandline:
+
+```
+esptool.py -p "COM6" --baud 921600 --before default_reset --after hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 bootloader_dio_40m.bin 0x8000 partitions.bin 0xe000 boot_app0.bin 0x10000 d1-mini-esp32_ili9341_<version>.bin
 ```
 
 ### ESP8266
@@ -54,8 +53,10 @@ esptool.py --chip esp32  --before default_reset --after hard_reset write_flash -
 
 #### Using esp-tool.py
 
+Unlink the ESP32, you only need one single .bin file to flash the ESP8266:
+
 ```
-esptool.py --port COM1 write_flash --flash_mode qio --flash_size 4m 0x0 hasp-lvgl-0.2.0-esp32_lolin_2.4_spi.bin
+esptool.py -p "COM1" write_flash --flash_mode qio --flash_size 4m 0x0 d1-mini-esp8266_ili9341_<version>.bin
 ```
 
 Change `COM1` to the correct port on your computer and `4m` to the correct size of the internal flash chip.
