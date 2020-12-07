@@ -23,16 +23,14 @@ hasp:
     children:
       - title: Overview
         url: /hasp-lvgl/
-      - title: "Quick-Start Guide"
-        url: /projects/hasp-lvgl/quick-start-guide/
+#      - title: "Quick-Start Guide"
+#        url: /projects/hasp-lvgl/quick-start-guide/
       - title: "Hardware Guide"
         url: /projects/hasp-lvgl/hardware/
       - title: "Firmware Installation"
         url: /projects/hasp-lvgl/installation/
       - title: "Wifi Setup"
         url: /projects/hasp-lvgl/wifi-setup/
-      - title: "Frequently Asked Questions"
-        url: /projects/hasp-lvgl/faq/
   - title: Configuration
     children:
       - title: "HTTP"
@@ -51,18 +49,24 @@ hasp:
         url: /projects/hasp-lvgl/debug/
   - title: Usage
     children:
+      - title: "License"
+        url: /projects/hasp-lvgl/license/
+#      - title: "Terms &amp; Privacy Policy"
+#        url: /terms/
       - title: "Command Reference"
         url: /projects/hasp-lvgl/commands/
-  - title: Home Automation
-    children:
-      - title: "Home Assistant"
-        url: /projects/hasp-lvgl/hass/
-      - title: "OpenHAB"
-        url: /projects/hasp-lvgl/openhab/
-      - title: "Node-RED"
-        url: /projects/hasp-lvgl/nodered/
-      - title: "Tasmota Slave"
-        url: /projects/hasp-lvgl/tasmota-slave/
+      - title: "Frequently Asked Questions"
+        url: /projects/hasp-lvgl/faq/
+#  - title: Home Automation
+#    children:
+#      - title: "Home Assistant"
+#        url: /projects/hasp-lvgl/hass/
+#      - title: "OpenHAB"
+#        url: /projects/hasp-lvgl/openhab/
+#      - title: "Node-RED"
+#        url: /projects/hasp-lvgl/nodered/
+#      - title: "Tasmota Slave"
+#        url: /projects/hasp-lvgl/tasmota-slave/
   - title: Design Pages
     children:
       - title: "Page Layout"
@@ -79,17 +83,13 @@ hasp:
         url: /projects/hasp-lvgl/firmware-esp/
       - title: "STM32"
         url: /projects/hasp-lvgl/firmware-stm32/
-  - title: Customization
-    children:
-      - title: "Compiling"
-        url: /projects/hasp-lvgl/compiling/
-      - title: "User Override"
-        url: /projects/hasp-lvgl/user-override/
-      - title: "Custom Configuration"
-        url: /projects/hasp-lvgl/custom-config/
+#  - title: Customization
+#    children:
+#      - title: "Compiling"
+#        url: /projects/hasp-lvgl/compiling/
+#      - title: "User Override"
+#        url: /projects/hasp-lvgl/user-override/
+#      - title: "Custom Configuration"
+#        url: /projects/hasp-lvgl/custom-config/
 #      - title: "Old 2.2 Docs"
 #        url: /projects/hasp-lvgl/docs-2-2/
-      - title: "License"
-        url: /projects/hasp-lvgl/license/
-#      - title: "Terms &amp; Privacy Policy"
-#        url: /terms/
