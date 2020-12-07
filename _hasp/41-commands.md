@@ -137,3 +137,17 @@ config/debug
 ```
 
 To update the configuration simple issue the same command `config/&gt;submodule&lt;` with updated json payload.
+
+## Multiple Commands
+
+`json`
+
+When you want to execute multiple commands in one payload, you can use the json command to create an array of commands.
+
+Each command is an element in this array of strings:
+
+```json
+["page 5","dim 50","light on","statusupdate"]
+```
+
+The commands are interpreted and processed sequentially.

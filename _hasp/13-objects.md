@@ -125,6 +125,20 @@ Possible wrapping modes are: expand, break, dots, scroll and loop
 {"page":2,"id":1,"objid":12,"h":24,"w":120,"txt":"\ufe05 Icon Demo"}
 ```
 
+### Arc
+**objid:22**
+
+![lv_arc]({{ site.url }}{{ site.baseurl }}/assets/images/hasp/lv_ex_arc_1.png){: .align-center}
+
+| Property  | Value      | Required | Default | Description
+|-----------|------------|----------|---------|--------------
+| min       | int16      | no       | 0       |
+| max       | int16      | no       | 100     |
+| val       | int16      | no       | 0       |
+| rotation  | int16      | no       | 0       |
+| type      | int16      | no       | normal  | normal, reverse, symetrical
+
+
 ### Spinner
 **objid:21**
 
